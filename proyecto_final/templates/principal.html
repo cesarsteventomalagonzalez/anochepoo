@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+<body>
+{% block main %}
+<header>
+    {% block header %}
+        {% include 'header.html' %}
+    {% endblock %}
+</header>
+     <div class="imagen">
+{#     <img src="{% static 'img/fond.jpeg' %}">#}
+      <div class="bg-text container" >
+        <h1 data-aos="fade-right">BIENVENIDOS A CCB</h1>
+        <h2 data-aos="fade-up"
+        data-aos-duration="3000">100% CALIDAD Y PRECIO</h2>
+     </div>
+ </div>
+ <section class="container ">
+  <h1 class="promocion1" data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine" data-aos-duration="3000">PROMOCIONES DEL PROGRAMA</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4 klk">
+    <div class="col" data-aos="zoom-out" data-aos-duration="3000">
+      <div class="card h-100">
+        <img src="./img/inicio.jpeg" class="img-fluid" alt="..." width="200px">
+        <div class="card-body">
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Alimentos</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="zoom-out" data-aos-duration="3000">
+      <div class="card h-100">
+        <img src="./img/inicio1.jpeg" class="img-fluid" alt="..." width="200px">
+        <div class="card-body">
+          <p>
+            <a class="btn btn-primary" href="#" role="button">bebidas</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="zoom-out" data-aos-duration="3000">
+      <div class="card h-100">
+        <img src="./img/inicio2.jpeg" class="img-fluid" alt="..." width="200px">
+        <div class="card-body">
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Electrodomesticos</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class= "imagen2" data-aos="flip-left" data-aos-duration="3000"></div>
+<div>
+  <img src="{% static 'img/wave.svg' %}" alt="">
+</div>
+
+{% block footer%}
+        {% include 'footer.html' %}
+    {% endblock %}
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+{% endblock %}
+
+

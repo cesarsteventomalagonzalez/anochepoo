@@ -1,0 +1,87 @@
+{% load static %}
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo"> Distribudora&#8594;{{ nombre }}</h1>
+
+    <h2>contacto</h2>
+
+    <address>
+      <a class="navbar-brand aim" href="#">
+          LLAME AL
+          {{ contacto }}
+         <img src="{% static 'img/contacto.png' %}" alt="" width="50" height="50">
+        </a>
+        <br>
+
+    </address>
+
+    <address>
+      <a class="navbar-brand aim" href="#">
+          Correo
+          {{ correo }}
+        </a>
+        <br>
+
+      <a class="footer__btn" href="https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword%3Fhl%3Des&service=accountsettings&hl=es&sarp=1&scc=1&rart=ANgoxcfbrB2dE_sgedjxK5y1g-1xrTeakxNJsn5qhw_G5AMB7KWDk0RekDx6e8ZHF684fYcAPWxQfOccGnjt9jsd-4muBOG67g&TL=AKqFyY_vS8-VPhjWfFQBbnGqcJglQ5vM1s06o2bTPAcKmTNAOdapOa_rNvYUOZrN&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin">Email Us</a>
+    </address>
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Categorias</h2>
+
+
+      <ul class="nav__ul">
+        <li>
+          <a href="/pages/licores.html">Mi comisariato</a>
+        </li>
+
+        <li>
+          <a href="#">Rio Store</a>
+        </li>
+
+        <li>
+          <a href="#">Panaderia</a>
+        </li>
+
+        <li>
+          <a href="#">Ferrisariato</a>
+        </li>
+
+      </ul>
+    </li>
+
+
+
+    <li class="nav__item">
+      <h2 class="nav__title">Redes Sociales</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a  href="">
+              Instagram
+             <img src="{% static 'img/Instagram.png' %}" alt="" width="45" height="30">
+            </a>
+        </li>
+
+        <li>
+          <a  href="https://www.facebook.com/cesar.sctg">
+              Facebook
+              <img src="{% static 'img/Facebook-Logo.png' %}" alt="" width="30" height="30">
+            </a>
+        </li>
+
+        <li>
+          <a  href="https://wa.me/593959989123">
+              WhatsApp
+              <img src="{% static 'img/WhatsApp.png' %}" alt="" width="45" height="30">
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="legal">
+    <p>&copy; 2022 Something. All rights reserved.</p>
+  </div>
+</footer>
